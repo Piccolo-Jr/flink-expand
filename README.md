@@ -5,7 +5,8 @@ Some extension development programs about flink for self-learning and communicat
 ## samples
 * Read data from GDB use Gremlin
 
-```StreamExecutionEnvironment streamEnv = StreamExecutionEnvironment.createLocalEnvironment();
+```
+ StreamExecutionEnvironment streamEnv = StreamExecutionEnvironment.createLocalEnvironment();
  streamEnv.setRuntimeMode(RuntimeExecutionMode.AUTOMATIC);
 
  GdbGremlinDeserializationSchema<Edge<String, NullValue>> deserializationSchema = new GdbGremlinDeserializationSchema<Edge<String,NullValue>>() {
